@@ -10,7 +10,7 @@ type Subscriber struct {
 	Active bool
 }
 
-func showSub(sub *Subscriber) {
+func ShowSub(sub *Subscriber) {
 	if sub.Active {
 		fmt.Printf("%s has status active with rate %.2f\n", sub.Name, sub.Rate)
 	} else {
@@ -18,7 +18,7 @@ func showSub(sub *Subscriber) {
 	}
 }
 
-func createSub(name string) *Subscriber {
+func CreateSub(name string) *Subscriber {
 	var newSub Subscriber
 	newSub.Active = true
 	newSub.Rate = 4.99
@@ -27,6 +27,6 @@ func createSub(name string) *Subscriber {
 	return &newSub
 }
 
-func applyDiscount(s *Subscriber) {
+func ApplyDiscount(s *Subscriber) {
 	s.Rate = 2.55
 }
