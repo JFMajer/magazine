@@ -10,6 +10,11 @@ type Subscriber struct {
 	Active bool
 }
 
+type Employee struct {
+	Name   string
+	Salary float64
+}
+
 func ShowSub(sub *Subscriber) {
 	if sub.Active {
 		fmt.Printf("%s has status active with rate %.2f\n", sub.Name, sub.Rate)
