@@ -5,14 +5,23 @@ import (
 )
 
 type Subscriber struct {
-	Name   string
-	Rate   float64
-	Active bool
+	Name        string
+	Rate        float64
+	Active      bool
+	HomeAddress Address
 }
 
 type Employee struct {
-	Name   string
-	Salary float64
+	Name        string
+	Salary      float64
+	HomeAddress Address
+}
+
+type Address struct {
+	City       string
+	Street     string
+	PostalCode string
+	Country    string
 }
 
 func ShowSub(sub *Subscriber) {
